@@ -1,0 +1,19 @@
+{
+    "name": "roundcube/plugin-manager",
+    "license": "BSD-3-Clause",
+    "description": "WIP: plugin manager",
+    "type": "roundcube-plugin",
+    "authors": [
+        "name": "Till Klampaeckel"
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "roundcube/plugin-installer": ">=0.1.0"
+    },
+    "minimum-stability": "dev-master"
+}
