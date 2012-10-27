@@ -19,6 +19,7 @@ class ArrayInterface extends NullIO
      */
     public function write($messages, $newline = true)
     {
+        $this->setupGlobals();
         $GLOBALS['COMPOSER_MESSAGES'] = $messages;
     }
 
@@ -27,9 +28,13 @@ class ArrayInterface extends NullIO
      */
     public function overwrite($messages, $newline = true, $size = 80)
     {
+        $this->setupGlobals();
         $GLOBALS['COMPOSER_MESSAGES'] = $messages;
     }
 
+    /**
+     * @return void
+     */
     protected function setupGlobals()
     {
         if (!isset($GLOBALS['COMPOSER_MESSAGES'])) {
