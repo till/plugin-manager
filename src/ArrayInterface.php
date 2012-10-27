@@ -1,6 +1,15 @@
 <?php
 use Composer\IO\NullIO;
 
+/**
+ * This is a temporary ArrayInterface for composer.
+ *
+ * Still have to discuss the details with the composer people because this is
+ * a little atrocious.
+ *
+ * What it does: writes messages to a global (!)
+ * Why: because Composer\Composer does not allow the retrieval of the IOInterface yet.
+ */
 class ArrayInterface extends NullIO
 {
     public $messages = array();
