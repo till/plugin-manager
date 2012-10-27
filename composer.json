@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "roundcube/plugin-installer": ">=0.1.0"
+        "roundcube/plugin-installer": ">=0.1.0",
+        "composer/composer": "*"
     },
     "minimum-stability": "dev-master"
 }
