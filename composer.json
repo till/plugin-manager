@@ -1,5 +1,5 @@
 {
-    "name": "till/roundcube-plugin-manager",
+    "name": "till/plugin_manager",
     "license": "BSD-3-Clause",
     "description": "WIP: plugin manager",
     "type": "roundcube-plugin",
